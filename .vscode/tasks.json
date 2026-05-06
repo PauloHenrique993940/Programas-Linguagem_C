@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilar Projeto C",
+            "command": "D:\\MSYS2\\ucrt64\\bin\\gcc.exe",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-Wshadow",
+                "-Wformat=2",
+                "-Wcast-align",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-Wnull-dereference",
+                "-g3",
+                "-O0",
+                "${file}",
+                "-o",
+                "${fileDirname}\\build\\outDebug.exe"
+            ],
+            "options": {
+                "cwd": "D:\\MSYS2\\ucrt64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compilador: D:/MSYS2/ucrt64/bin/gcc.exe"
+        }
+    ]
+}
